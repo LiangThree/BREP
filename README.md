@@ -3,7 +3,7 @@
 ### Overview
 - BREP focuses on modifying intermediate activations of large language models through prefix tuning, ReFT, and LoRA to improve reasoning, factuality, and robustness.
 - The project offers unified training, inference, and analysis scripts so experiments can be reproduced across different base models (e.g., Llama, Qwen) and datasets.
-![BREP Architecture Diagram]([fig_01.jpg](https://github.com/LiangThree/BREP/blob/main/fig_01.jpg)）
+![BREP Architecture Diagram](https://github.com/LiangThree/BREP/blob/main/fig_01.jpg)
 ### Directory Layout
 - `model.py`: Defines the pluggable `ActivationModel` and `ActivationLayer` that inject trainable parameters at FFN, residual, or other positions.
 - `Prefix/`: Training, inference, and evaluation scripts for prefix control and ReFT (e.g., `prefix_train.py`, `answer.py`, `eval.py`).
